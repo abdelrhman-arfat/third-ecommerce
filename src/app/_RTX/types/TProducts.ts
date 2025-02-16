@@ -1,0 +1,34 @@
+export type TProducts = {
+  app_sale_price: string;
+  app_sale_price_currency: string;
+  commission_rate: string;
+  discount: string;
+  evaluate_rate: string;
+  first_level_category_id: number;
+  first_level_category_name: string;
+  hot_product_commission_rate: string;
+  lastest_volume: number;
+  original_price: string;
+  original_price_currency: string;
+  product_detail_url: string;
+  product_id: number;
+  product_main_image_url: string;
+  product_small_image_urls: string[];
+  product_title: string;
+  product_video_url: string;
+  sale_price: string;
+  sale_price_currency: string;
+  second_level_category_id: number;
+  second_level_category_name: string;
+  shop_id: number;
+  shop_url: string;
+  sku_id: number;
+  target_app_sale_price: string;
+  target_app_sale_price_currency: string;
+  target_original_price: string;
+  target_original_price_currency: string;
+  target_sale_price: string;
+  target_sale_price_currency: string;
+  tax_rate: string;
+};
+// Parameters of the function :

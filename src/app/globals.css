@@ -2,20 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* BTNS */
+*::selection {
+  @apply bg-hero-500 text-prim;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.buy-btn {
+  @apply hover:bg-hero-600 bg-hero-500 duration-300 px-2 py-1 text-prim font-bold rounded-[8px];
+}
+
+.categories-div button {
+  @apply px-4 py-2 sm:text-sm bg-hero-400 capitalize text-prim rounded-full hover:bg-neutral-800 duration-200;
+}
+/* BTNS */
+.image-photo {
+  animation: phoneAnimation 9s ease-in-out infinite alternate;
+}
+
+@keyframes phoneAnimation {
+  0% {
+    rotate: 2deg;
+    transform: translateY(0);
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  50% {
+    rotate: -2deg;
+    transform: translateY(-10px);
+  }
+  100% {
+    rotate: 0deg;
+    transform: translateY(0);
+  }
 }
