@@ -5,7 +5,7 @@ const NavbarLinks = () => {
   const links: { name: string; href: string }[] = [
     { name: "Home", href: "/" },
     { name: "Cart", href: "/cart" },
-    { name: "Register", href: "/register" },
+    { name: "Register", href: "#" },
   ];
   const pathname = usePathname();
   return (
